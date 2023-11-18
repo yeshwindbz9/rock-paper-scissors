@@ -3,26 +3,52 @@ body{
 }
 h1, h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 h1{
     font-size: 90px;
 }
 .main{
+    margin: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 .two{
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position:50% 50%;
     flex: 1;
-    background-image: url("https://media2.giphy.com/media/ZNo3OCM9CoEVz71ilQ/giphy.gif?cid=ecf05e47qd1v4v53t0ubtthao20trrrqs3nexs36g83f3npc&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    background-image: url("https://media2.giphy.com/media/798oH0WDEQnicM4857/giphy.gif?cid=ecf05e47zpu64vdk798vptyte1rcbqaop18gix0x70ux20kk&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .three{
     display: flex;
     background-color: black;
     justify-content: center;
     color: whitesmoke;
+}
+
+#seas, #hills {
+    background-color: Transparent;
+    border: 2px solid;
+    cursor:pointer;
+    border-radius:9px;
+    padding: 3px 8px;
+}
+
+#rock, #paper, #scissor {
+    background-color: Transparent;
+    border: 2px solid;
+    cursor:pointer;
+    border-radius:9px;
+    font-size:80px;
 }
